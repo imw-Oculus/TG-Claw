@@ -7,12 +7,6 @@
 	max_ammo = 8
 	multiple_sprites = 2
 
-/obj/item/ammo_box/magazine/m10mm/fire
-	name = "pistol magazine (10mm incendiary)"
-	icon_state = "9x19pI"
-	desc = "A gun magazine. Loaded with rounds which ignite the target."
-	ammo_type = /obj/item/ammo_casing/c10mm/fire
-
 /obj/item/ammo_box/magazine/m10mm/hp
 	name = "pistol magazine (10mm HP)"
 	icon_state = "9x19pH"

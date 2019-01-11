@@ -436,30 +436,6 @@
 	build_path = /obj/item/storage/pill_bottle
 	category = list("initial", "Medical")
 
-/datum/design/beanbag_slug
-	name = "Beanbag Slug"
-	id = "beanbag_slug"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 1000)
-	build_path = /obj/item/ammo_casing/shotgun/beanbag
-	category = list("initial", "Security")
-
-/datum/design/rubbershot
-	name = "Rubber Shot"
-	id = "rubber_shot"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 1000)
-	build_path = /obj/item/ammo_casing/shotgun/rubbershot
-	category = list("initial", "Security")
-
-/datum/design/c38
-	name = "Speed Loader (.38)"
-	id = "c38"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 2000)
-	build_path = /obj/item/ammo_box/c38
-	category = list("initial", "Security")
-
 /datum/design/recorder
 	name = "Universal Recorder"
 	id = "recorder"
@@ -661,38 +637,6 @@
 	build_path = /obj/item/weaponcrafting/receiver
 	category = list("hacked", "Security")
 
-/datum/design/shotgun_slug
-	name = "Shotgun Slug"
-	id = "shotgun_slug"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 1000)
-	build_path = /obj/item/ammo_casing/shotgun
-	category = list("initial", "Security")
-
-/datum/design/buckshot_shell
-	name = "Buckshot Shell"
-	id = "buckshot_shell"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 1000)
-	build_path = /obj/item/ammo_casing/shotgun/buckshot
-	category = list("hacked", "Security")
-
-/datum/design/shotgun_dart
-	name = "Shotgun Dart"
-	id = "shotgun_dart"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 1000)
-	build_path = /obj/item/ammo_casing/shotgun/dart
-	category = list("hacked", "Security")
-
-/datum/design/incendiary_slug
-	name = "Incendiary Slug"
-	id = "incendiary_slug"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 1000)
-	build_path = /obj/item/ammo_casing/shotgun/incendiary
-	category = list("hacked", "Security")
-
 /datum/design/riot_dart
 	name = "Foam Riot Dart"
 	id = "riot_dart"
@@ -708,78 +652,6 @@
 	materials = list(MAT_METAL = 22000) //Comes with 40 darts
 	build_path = /obj/item/ammo_box/foambox/riot
 	category = list("hacked", "Security")
-
-/datum/design/a357
-	name = "Speed Loader (.357)"
-	id = "a357"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 4000)
-	build_path = /obj/item/ammo_box/a357
-	category = list("initial", "Security")
-
-/datum/design/c10mm
-	name = "Ammo Box (10mm)"
-	id = "c10mm"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 10000)
-	build_path = /obj/item/ammo_box/c10mm
-	category = list("initial", "Security")
-
-/datum/design/c45
-	name = "Ammo Box (.45)"
-	id = "c45"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 10000)
-	build_path = /obj/item/ammo_box/c45
-	category = list("initial", "Security")
-
-/datum/design/c9mm
-	name = "Ammo Box (9mm)"
-	id = "c9mm"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 15000)
-	build_path = /obj/item/ammo_box/c9mm
-	category = list("initial", "Security")
-
-/datum/design/m44
-	name = "Speed Loader (.44)"
-	id = "m44"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 4000)
-	build_path = /obj/item/ammo_box/m44
-	category = list("initial", "Security")
-
-/datum/design/a40mm
-	name = "Ammo Box (40mm)"
-	id = "a40mm"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 20000)
-	build_path = /obj/item/ammo_box/a40mm
-	category = list("initial", "Security")
-
-/datum/design/a556
-	name = "Ammo Box (5.56x45mm)"
-	id = "a556"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 20000)
-	build_path = /obj/item/ammo_box/a556
-	category = list("initial", "Security")
-
-/datum/design/a762
-	name = "Stripper Clip (7.62mm)"
-	id = "a762"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 5000)
-	build_path = /obj/item/ammo_box/a762
-	category = list("initial", "Security")
-
-/datum/design/doublestacked
-	name = "Rangemaster Stripper Clip (7.62mm)"
-	id = "doublestacked"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 10000)
-	build_path = /obj/item/ammo_box/a762/doublestacked
-	category = list("initial", "Security")
 
 /datum/design/cleaver
 	name = "Butcher's Cleaver"
