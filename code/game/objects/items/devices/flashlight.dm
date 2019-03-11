@@ -52,10 +52,6 @@
 		if((user.has_trait(TRAIT_CLUMSY) || user.has_trait(TRAIT_DUMB)) && prob(50))	//too dumb to use flashlight properly
 			return ..()	//just hit them in the head
 
-		if(!user.IsAdvancedToolUser())
-			to_chat(user, "<span class='warning'>You don't have the dexterity to do this!</span>")
-			return
-
 		if(!M.get_bodypart(BODY_ZONE_HEAD))
 			to_chat(user, "<span class='warning'>[M] doesn't have a head!</span>")
 			return
@@ -168,6 +164,7 @@
 	var/holo_cooldown = 0
 
 /obj/item/flashlight/pen/afterattack(atom/target, mob/user, proximity_flag)
+	. = ..()
 	if(!proximity_flag)
 		if(holo_cooldown > world.time)
 			to_chat(user, "<span class='warning'>[src] is not ready yet!</span>")
@@ -177,7 +174,6 @@
 			new /obj/effect/temp_visual/medical_holosign(T,user) //produce a holographic glow
 			holo_cooldown = world.time + 100
 			return
-	..()
 
 /obj/effect/temp_visual/medical_holosign
 	name = "medical holosign"
@@ -380,6 +376,7 @@
 	return
 
 /obj/item/flashlight/emp/afterattack(atom/movable/A, mob/user, proximity)
+	. = ..()
 	if(!proximity)
 		return
 
@@ -535,6 +532,6 @@
 	desc = "This shouldn't exist outside of someone's head, how are you seeing this?"
 	brightness_on = 15
 	flashlight_power = 1
-	flags_1 = CONDUCT_1 
+	flags_1 = CONDUCT_1
 	item_flags = DROPDEL
 	actions_types = list()

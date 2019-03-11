@@ -4,7 +4,7 @@
 
 
 /mob/living/carbon/human/canBeHandcuffed()
-	if(get_num_arms() >= 2)
+	if(get_num_arms(FALSE) >= 2)
 		return TRUE
 	else
 		return FALSE
@@ -95,11 +95,6 @@
 	if(has_trait(TRAIT_MONKEYLIKE))
 		return FALSE
 	return TRUE//Humans can use guns and such
-
-/mob/living/carbon/human/is_super_advanced_tool_user()
-	if(has_trait(TRAIT_TECHNOPHREAK))
-		return TRUE
-	return FALSE // You're not a technophreak without training!
 
 /mob/living/carbon/human/reagent_check(datum/reagent/R)
 	return dna.species.handle_chemicals(R,src)

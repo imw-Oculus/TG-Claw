@@ -380,6 +380,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 
 	if(!L || !L.len)
 		to_chat(usr, "No area available.")
+		return
 
 	usr.forceMove(pick(L))
 	update_parallax_contents()
@@ -516,9 +517,6 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	to_chat(src, "<span class='danger'>You are dead! You have no mind to store memory!</span>")
 
 /mob/dead/observer/IsAdvancedToolUser()
-	return TRUE
-
-/mob/dead/observer/is_super_advanced_tool_user()
 	return TRUE
 
 /mob/dead/observer/verb/toggle_ghostsee()

@@ -43,7 +43,7 @@
 
 /obj/item/dildo/attack(mob/living/carbon/human/M, mob/living/carbon/human/user)
 	var/message = ""
-	if(istype(M, /mob/living/carbon/human) && user.zone_selected == "groin" && M.is_nude())
+	if(istype(M, /mob/living/carbon/human) && user.zone_selected == "groin" && M.is_bottomless())
 		if(hole == CUM_TARGET_VAGINA && M.has_vagina())
 			message = (user == M) ? pick("fucks their own pussy with \the [src]","shoves the [src] into their pussy", "jams the [src] into their pussy") : pick("fucks [M] right in the pussy with \the [src]", "jams \the [src] right into [M]'s pussy")
 		else if(hole == CUM_TARGET_ANUS && M.has_anus())
@@ -106,7 +106,6 @@
 	blood_state = null
 	bloodiness = null
 	//var/blood_DNA = list()
-	beauty = -50
 
 /obj/effect/decal/cleanable/cum/Initialize()
 	..()
@@ -121,7 +120,7 @@
 
 /obj/item/dildo/cyborg/attack(mob/living/carbon/human/M, mob/living/carbon/human/user)
 	var/message = ""
-	if(istype(M, /mob/living/carbon/human) && M.is_nude())
+	if(istype(M, /mob/living/carbon/human) && M.is_bottomless())
 		if(hole == CUM_TARGET_VAGINA && M.has_vagina())
 			message = (user == M) ? pick("fucks their own pussy with \the [src]","shoves the [src] into their pussy", "jams the [src] into their pussy") : pick("fucks [M] right in the pussy with \the [src]", "jams \the [src] right into [M]'s pussy")
 		else if(hole == CUM_TARGET_ANUS && M.has_anus())
